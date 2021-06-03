@@ -1,7 +1,7 @@
 // ---------- bootstrap -----------
 import { Jumbotron, Button, Container, Row, Col, Navbar } from 'react-bootstrap';
 import '../style/LandingPage.css';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 // ------------- Aos --------------
 import Aos from "aos";
 import "aos/dist/aos.css"
@@ -17,8 +17,17 @@ import Rectagle6 from '../asset/Rectangle 8.jpg';
 import Rectagle7 from '../asset/Rectangle 10.jpg';
 import Rectagle8 from '../asset/Rectangle 12.jpg';
 
+// ------------ register -----------
+import Register from '../molecules/Register'
 
 function LandingPage() {
+
+    // register
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    // aos duration
     useEffect(() => {
         Aos.init({ duration: 900 });
     }, [])
@@ -39,7 +48,11 @@ function LandingPage() {
                                 Join now, share your creations with another <br /> people and enjoy other creations.
                             </p>
                             <p className="mt-4">
-                                <Button className="btnlogin ml-4" variant="primary">Login</Button> <Button className="Register">Register</Button>
+                                <Button className="btnlogin ml-4" variant="primary">Login</Button> <Button className="Register" onClick={handleShow}>Register</Button>
+
+                                {/* ------- Register ----- */}
+                                <Register show={show} handleClose={handleClose} />
+
                             </p>
                         </Col>
                         {/* ------- gambar ----- */}
