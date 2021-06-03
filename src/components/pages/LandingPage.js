@@ -23,9 +23,10 @@ import Register from '../molecules/Register'
 function LandingPage() {
 
     // register
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [showRegister, setRegister] = useState(false);
+    const handleCloseRegister = () => setRegister(false);
+    const handleShowRegister = () => setRegister(true);
+
 
     // aos duration
     useEffect(() => {
@@ -48,10 +49,10 @@ function LandingPage() {
                                 Join now, share your creations with another <br /> people and enjoy other creations.
                             </p>
                             <p className="mt-4">
-                                <Button className="btnlogin ml-4" variant="primary">Login</Button> <Button className="Register" onClick={handleShow}>Register</Button>
+                                <Button className="btnlogin ml-4" variant="primary">Login</Button> <Button className="Register" onClick={handleShowRegister}>Register</Button>
 
                                 {/* ------- Register ----- */}
-                                <Register show={show} handleClose={handleClose} />
+                                <Register show={showRegister} handleClose={handleCloseRegister} />
 
                             </p>
                         </Col>
