@@ -1,3 +1,3 @@
 ## Landing page
 
-<img src="https://github.com/ideapedyudi/fe_dumpgram/blob/2.-register/src/components/asset/register.gif" style="text-align : center;" > </img>
+<img src="https://github.com/ideapedyudi/fe_dumpgram/blob/3.-login/src/components/asset/login.gif" style="text-align : center;" > </img>
