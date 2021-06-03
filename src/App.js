@@ -1,4 +1,6 @@
+// ----- import landingpage -----
 import LandingPage from "./components/pages/LandingPage";
+// ---- rounter -----
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

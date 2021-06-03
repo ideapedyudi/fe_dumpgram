@@ -1,9 +1,12 @@
-import React from 'react';
+// ---------- bootstrap -----------
 import { Jumbotron, Button, Container, Row, Col, Navbar } from 'react-bootstrap';
 import '../style/LandingPage.css';
 import { useEffect } from "react";
+// ------------- Aos --------------
 import Aos from "aos";
 import "aos/dist/aos.css"
+
+// ------------- asset ------------
 import DumbGram from '../asset/DumbGram.svg';
 import Rectagle1 from '../asset/Rectangle 6.jpg';
 import Rectagle2 from '../asset/Rectangle 3.jpg';
@@ -13,8 +16,6 @@ import Rectagle5 from '../asset/Rectangle 9.jpg';
 import Rectagle6 from '../asset/Rectangle 8.jpg';
 import Rectagle7 from '../asset/Rectangle 10.jpg';
 import Rectagle8 from '../asset/Rectangle 12.jpg';
-
-// landing page
 
 
 function LandingPage() {
@@ -27,6 +28,7 @@ function LandingPage() {
             <Jumbotron>
                 <Container>
                     <Row>
+                        {/* ------- text ----- */}
                         <Col lg={5} className="kiri" data-aos="fade-right">
                             <Navbar.Brand>
                                 <img src={DumbGram} className="logo" alt="logo" />
@@ -40,6 +42,7 @@ function LandingPage() {
                                 <Button className="btnlogin ml-4" variant="primary">Login</Button> <Button className="Register">Register</Button>
                             </p>
                         </Col>
+                        {/* ------- gambar ----- */}
                         <Col lg={7}>
                             <Row data-aos="zoom-in">
                                 <Col lg={4}>
