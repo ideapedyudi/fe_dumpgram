@@ -27,7 +27,7 @@ function LandingPage() {
                 <Container>
                     <Row>
                         <Col lg={5} className="kiri" data-aos="fade-right">
-                            <Navbar.Brand href="#home">
+                            <Navbar.Brand>
                                 <img src={DumbGram} className="logo" alt="logo" />
                             </Navbar.Brand> <br /><br /><br />
 
