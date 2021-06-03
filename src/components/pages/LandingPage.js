@@ -20,12 +20,20 @@ import Rectagle8 from '../asset/Rectangle 12.jpg';
 // ------------ register -----------
 import Register from '../molecules/Register'
 
+// ------------ login -----------
+import Login from '../molecules/Login';
+
 function LandingPage() {
 
     // register
     const [showRegister, setRegister] = useState(false);
     const handleCloseRegister = () => setRegister(false);
     const handleShowRegister = () => setRegister(true);
+
+    // login
+    const [showLogin, setLogin] = useState(false);
+    const handleCloseLogin = () => setLogin(false);
+    const handleShowLogin = () => setLogin(true);
 
 
     // aos duration
@@ -49,11 +57,13 @@ function LandingPage() {
                                 Join now, share your creations with another <br /> people and enjoy other creations.
                             </p>
                             <p className="mt-4">
-                                <Button className="btnlogin ml-4" variant="primary">Login</Button> <Button className="Register" onClick={handleShowRegister}>Register</Button>
+                                <Button className="btnlogin ml-4" variant="primary" onClick={handleShowLogin}>Login</Button> <Button className="Register" onClick={handleShowRegister}>Register</Button>
 
                                 {/* ------- Register ----- */}
                                 <Register show={showRegister} handleClose={handleCloseRegister} />
 
+                                {/* ------- Login ----- */}
+                                <Login show={showLogin} handleClose={handleCloseLogin} />
                             </p>
                         </Col>
                         {/* ------- gambar ----- */}
