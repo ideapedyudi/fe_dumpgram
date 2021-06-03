@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+          {/* landing page */}
           <Route path="/" exact component={LandingPage} />
         </Switch>
       </Router>

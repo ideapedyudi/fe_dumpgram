@@ -23,6 +23,7 @@ function LandingPage() {
     }, [])
     return (
         <div>
+            {/* ------------------------------------------- pembuka jumbotron page ------------------------------------------ */}
             <Jumbotron>
                 <Container>
                     <Row>
@@ -71,6 +72,7 @@ function LandingPage() {
                     </Row>
                 </Container>
             </Jumbotron>
+            {/* ------------------------------------------- penutup jumbotron page ------------------------------------------ */}
         </div >
     )
 }
