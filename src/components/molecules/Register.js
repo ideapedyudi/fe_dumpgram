@@ -1,9 +1,9 @@
 import { Button, Form } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal'
 import '../style/Register.css';
-
 function Register(props) {
     const { show, handleClose } = props;
+
     return (
         <>
             {/* ----------- modal ---------- */}
@@ -21,7 +21,7 @@ function Register(props) {
                         <Button className="btlogin" variant="primary" size="lg" block>
                             Register
                         </Button>
-                        <center className="mt-2 loginend">Already have an account ? Klik  <a href="/login" className="linklogin">Here</a></center>
+                        <center className="mt-2 loginend">Already have an account ? Klik <a href="/login" className="linklogin">Here</a> </center>
                     </Form>
                 </Modal.Body>
             </Modal>
