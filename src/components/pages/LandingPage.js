@@ -17,24 +17,14 @@ import Rectagle6 from '../asset/Rectangle 8.jpg';
 import Rectagle7 from '../asset/Rectangle 10.jpg';
 import Rectagle8 from '../asset/Rectangle 12.jpg';
 
-// ------------ register -----------
-import Register from '../molecules/Register'
-
 // ------------ login -----------
 import Login from '../molecules/Login';
 
 function LandingPage() {
 
-    // register
-    const [showRegister, setRegister] = useState(false);
-    const handleCloseRegister = () => setRegister(false);
-    const handleShowRegister = () => setRegister(true);
-
     // login
-    const [showLogin, setLogin] = useState(false);
-    const handleCloseLogin = () => setLogin(false);
-    const handleShowLogin = () => setLogin(true);
-
+    const [isClickLogin, setClickLogin] = useState(false);
+    const handleClickLogin = () => setClickLogin(!isClickLogin);
 
     // aos duration
     useEffect(() => {
@@ -57,14 +47,9 @@ function LandingPage() {
                                 Join now, share your creations with another <br /> people and enjoy other creations.
                             </p>
                             <p className="mt-4">
-                                <Button className="btnlogin ml-4" variant="primary" onClick={handleShowLogin}>Login</Button> <Button className="Register" onClick={handleShowRegister}>Register</Button>
-
-                                {/* ------- Register ----- */}
-                                <Register show={showRegister} handleClose={handleCloseRegister} />
-
-                                {/* ------- Login ----- */}
-                                <Login show={showLogin} handleClose={handleCloseLogin} />
+                                <Button className="btnlogin ml-4" variant="primary" onClick={handleClickLogin}>Login</Button> <Button className="Register">Register</Button>
                             </p>
+                            {isClickLogin ? <Login isOpen={isClickLogin} /> : null}
                         </Col>
                         {/* ------- gambar ----- */}
                         <Col lg={7}>

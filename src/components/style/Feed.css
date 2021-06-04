@@ -1,0 +1,85 @@
+htmk, body {
+    overflow-x: hidden;
+    background-color: #0B0B0B;
+}
+
+.profile {
+    background-color: #0B0B0B;
+    height: 100vh;
+    position: fixed;
+    width: 30%;
+    border-right: 1px solid rgba(106, 106, 106, 0.3);;
+}
+
+.feed {
+    margin-left: 31%;
+    color: white;
+    background-color: #0B0B0B;
+}
+
+.bar{
+    height: 30px;
+    background-color: #0B0B0B !important;
+}
+
+.logo {
+    width: 30%;
+}
+
+.bg-card {
+    background-color: #0B0B0B !important;
+}
+
+.logoprofile {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: 5px;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border-radius: 50%;
+    margin-left: 32%;
+}
+
+.namaprofile {
+    color: white;
+    font-size: 25px;
+}
+
+.namagm {
+    color: #ABABAB;
+    margin-top: -4px;
+    font-size: 13px;
+}
+
+.barfollow {
+    color: #ABABAB;
+}
+
+.panel {
+    border-right: 1px solid rgba(106, 106, 106, 0.3);
+    height: 60px;
+    font-size: 13px;
+}
+
+.panels {
+    font-size: 13px;
+}
+
+.jumlah {
+    margin-top: -10px;
+    color: white;
+    font-size: 15px;
+}
+
+.bio {
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 36px;
+    margin-top: 20px;
+    font-size: 12px;
+}
