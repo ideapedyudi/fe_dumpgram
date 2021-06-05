@@ -7,7 +7,7 @@ import '../style/Explore.css'
 // ------------- Aos --------------
 import Aos from "aos";
 import "aos/dist/aos.css"
-import { useEffect } from 'react';
+import { useEffect } from 'react'; 
 
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
