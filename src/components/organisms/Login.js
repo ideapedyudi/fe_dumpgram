@@ -3,7 +3,7 @@ import { Button, Form, Modal } from 'react-bootstrap';
 
 
 // ------------ register -----------
-import Register from '../molecules/Register'
+import Register from '../organisms/Register'
 
 import '../style/Login.css';
 
@@ -13,10 +13,17 @@ function Login(props) {
 
     const handleClose = () => setShow(false);
 
+    // register
+    const [showRegisterModal, setRegisterModal] = useState(false);
+    const handleModalRegister = () => {
+        setShow(!show);
+        setRegisterModal(!showRegisterModal);
+    }
+
     return (
         <>
             {/* ----------- modal ---------- */}
-            <Register isOpen={true} />
+            { showRegisterModal ? <Register isOpen={true} /> : null}
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header className="border-0 modal-header">
                     <Modal.Title>Login</Modal.Title>
@@ -24,15 +31,15 @@ function Login(props) {
                 <Modal.Body className="modal-body">
                     {/* form */}
                     <Form>
-                        <Form.Control className="form-control" type="text" placeholder="Email" /> <br />
-                        <Form.Control className="form-control" type="password" placeholder="Password" /> <br />
-                        <a href="/feed">
+                        <Form.Control className="form-controls" type="text" placeholder="Email" /> <br />
+                        <Form.Control className="form-controls" type="password" placeholder="Password" /> <br />
+                        <a href="/feedpage">
                             <Button className="btlogin" variant="primary" size="lg">
                                 Login
                             </Button>
                             {/* ------- Register ----- */}
                         </a>
-                        <center className="mt-2 loginend">Don't have an account ? Klik <Button variant="primary">Here</Button></center>
+                        <center className="mt-2 loginend">Don't have an account ? Klik <span className="Reg" onClick={handleModalRegister}>Here</span></center>
                     </Form>
                 </Modal.Body>
             </Modal>

@@ -18,13 +18,20 @@ import Rectagle7 from '../asset/Rectangle 10.jpg';
 import Rectagle8 from '../asset/Rectangle 12.jpg';
 
 // ------------ login -----------
-import Login from '../molecules/Login';
+import Login from '../organisms/Login';
+
+// ----------- register ----------
+import Register from '../organisms/Register'
 
 function LandingPage() {
 
     // login
     const [isClickLogin, setClickLogin] = useState(false);
     const handleClickLogin = () => setClickLogin(!isClickLogin);
+
+    // registerasi
+    const [isClickRegister, setClickRegister] = useState(false);
+    const handleClickRegister = () => setClickRegister(!isClickRegister);
 
     // aos duration
     useEffect(() => {
@@ -47,9 +54,10 @@ function LandingPage() {
                                 Join now, share your creations with another <br /> people and enjoy other creations.
                             </p>
                             <p className="mt-4">
-                                <Button className="btnlogin ml-4" variant="primary" onClick={handleClickLogin}>Login</Button> <Button className="Register">Register</Button>
+                                <Button className="btnlogin ml-4" variant="primary" onClick={handleClickLogin}>Login</Button> <Button className="Register" onClick={handleClickRegister}>Register</Button>
                             </p>
                             {isClickLogin ? <Login isOpen={isClickLogin} /> : null}
+                            {isClickRegister ? <Register isOpen={isClickRegister} /> : null}
                         </Col>
                         {/* ------- gambar ----- */}
                         <Col lg={7}>
@@ -57,7 +65,6 @@ function LandingPage() {
                                 <Col lg={4}>
                                     <img src={Rectagle1} className="Rectagle1" alt="logo" />
                                 </Col>
-
                                 <Col lg={4}>
                                     <img src={Rectagle2} className="Rectagle2" alt="logo" />
                                 </Col>

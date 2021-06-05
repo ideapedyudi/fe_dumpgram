@@ -11,11 +11,16 @@
     border-radius: 10px;
 }
 
+.Reg {
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .modal-body {
     background-color: #1F1F1F;
 }
 
-.form-control {
+.form-controls {
     height: 50px;
     background: rgba(210, 210, 210, 0.25);
     border: 2px solid #D2D2D2;

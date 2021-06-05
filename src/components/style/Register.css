@@ -7,15 +7,25 @@
     padding-top: 7%;
 }
 
+.alert-register {
+    width: 90%;
+    margin-left: 5%;
+}
+
 .modal-dialog {
     border-radius: 10px;
+}
+
+.log {
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .modal-body {
     background-color: #1F1F1F;
 }
 
-.form-control {
+.form-controls {
     height: 50px;
     background: rgba(210, 210, 210, 0.25);
     border: 2px solid #D2D2D2;

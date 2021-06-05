@@ -1,0 +1,68 @@
+// ------------- Aos --------------
+import { Row, Col, Navbar, Card, Button } from 'react-bootstrap';
+
+import '../style/ProfilePeople.css'
+
+// ------------- Aos --------------
+// import Aos from "aos";
+import "aos/dist/aos.css"
+
+// ------------- fontawesome -----------
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignInAlt, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faCompass } from '@fortawesome/free-regular-svg-icons';
+
+// ------------- asset ------------
+import DumbGram from '../asset/DumbGram.svg';
+import Profile from '../asset/zeny.png';
+
+function ProfilPeopleProfilFeed() {
+    return (
+        <>
+            {/* --------------------------- card profile people feed -------------------------- */}
+            <Navbar bg="dark" className="bar">
+                <a href="/feedpage">
+                    <img src={DumbGram} className="logos ms-4 mt-5" alt="logo" />
+                </a>
+            </Navbar>
+            <Card className="bg-card text-center mt-3">
+                <Card.Body>
+                    <Card.Text>
+                        <div className="circle mt-4">
+                            <img src={Profile} className="logoprofile" alt="logo" />
+                        </div>
+                    </Card.Text>
+                    <h3 className="namaprofile">Zayn Malik</h3>
+                    <p className="namagm">@zayn</p>
+                    <Button className="messege">Message</Button> &nbsp;&nbsp;<Button className="Unfollow">Unfollow</Button>
+                    <Row className="mt-4 barfollow">
+                        <Col lg={4} className="panel">
+                            <p>Post</p>
+                            <p className="jumlah">143</p>
+                        </Col>
+                        <Col lg={4} className="panel">
+                            <p>Followers</p>
+                            <p className="jumlah">40.5 M</p>
+                        </Col>
+                        <Col lg={4} className="panels">
+                            <p>Following</p>
+                            <p className="jumlah">28</p>
+                        </Col>
+                    </Row>
+                    <p className="bio">Nobody is Listening Out Now! www.inzayn.com</p>
+                    <div class="menus">
+                        <p> <a href="/ProfilePeopleFeed" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-feed" icon={faHome} /><span className="title-feed">Feed</span></a></p>
+                        <p> <a href="/ProfilePeopleExplore" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-explore" icon={faCompass} /><span className="title-explore">Explore</span></a></p>
+                    </div>
+
+                    <div class="logoutPeople">
+                        <p><FontAwesomeIcon className="ms-auto me-5 icon-logout" icon={faSignInAlt} /><span className="title-logout">Logout</span></p>
+                    </div>
+                </Card.Body>
+            </Card>
+        </>
+    )
+}
+
+export default ProfilPeopleProfilFeed
+
