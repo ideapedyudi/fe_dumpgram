@@ -4,7 +4,7 @@ import { Navbar, InputGroup, FormControl, Button, Col, Card, Container } from 'r
 // ----------- feed.css ----------------
 import '../style/Feed.css'
 
-// ------------- Aos --------------
+// ------------- Aos -----------------
 import Aos from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
