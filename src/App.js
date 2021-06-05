@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// ----- import landingpage -----
+import LandingPage from "./components/pages/LandingPage";
+import FeedPage from "./components/pages/FeedPage";
+import ExplorePage from "./components/pages/ExplorePage";
+import ProfilePeopleFeed from './components/pages/ProfilePeopleFeed';
+import ProfilePeopleExplore from './components/pages/ProfilePeopleExplore'
+
+// ---- rounter -----
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          {/* landing page */}
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/FeedPage" exact component={FeedPage} />
+          <Route path="/ExplorePage" exact component={ExplorePage} />
+          <Route path="/ProfilePeopleFeed" exact component={ProfilePeopleFeed} />
+          <Route path="/ProfilePeopleExplore" exact component={ProfilePeopleExplore} />
+        </Switch>
+      </Router>
     </div>
   );
 }
