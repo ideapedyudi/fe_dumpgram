@@ -1,0 +1,23 @@
+.barmassage {
+    width: 120% !important;
+    background: rgba(210, 210, 210, 0.25);
+    color: white;
+    border: none;
+    margin-top: -30px !important;
+}
+
+.barmassage:focus {
+    background: rgba(210, 210, 210, 0.25);
+    border: none;
+}
+
+.massegechatbox {
+    padding-bottom: 20px;
+}
+
+.massegae {
+    background-color: turquoise;
+    height: 80px;
+    background: rgba(39, 39, 39);
+    margin-left: 29%;
+}

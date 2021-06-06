@@ -41,9 +41,11 @@ function ProfilPeopleFeed() {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <FontAwesomeIcon className="icon-Notifikasi" icon={faBell} />
-                        <FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} />
+                        <a href="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></a>
                         <Navbar.Text>
-                            <Button className="button-post"><span className="plusquar"><FontAwesomeIcon className="icon-plus" icon={faPlus} /></span> &nbsp;<span className="create">Create Post</span></Button>
+                            <a href="/CreatePostPage">
+                                <Button className="button-post"><span className="plusquar"><FontAwesomeIcon className="icon-plus" icon={faPlus} /></span> &nbsp;<span className="create">Create Post</span></Button>
+                            </a>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
