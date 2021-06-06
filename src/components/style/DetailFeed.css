@@ -1,0 +1,111 @@
+.modallg {
+    width: 150%;
+    border-radius: 5px;
+    height: 500px;
+}
+
+.modalleft {
+    margin-left: -140px;
+}
+
+.gambarfeed {
+    margin-top: -15px;
+    margin-left: -18px;
+    /* background-color: blanchedalmond; */
+    width: 500px;
+    height: 500px;
+}
+
+.bgcard {
+    background-color: #1F1F1F;
+}
+
+.gambardetail {
+    width: 460px;
+    height: 498px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cardcoment {
+    margin-left: -30px;
+}
+
+.circlement {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border-radius: 50%;
+    display: flex;
+}
+
+.cardcoment {
+    background-color: #1F1F1F;
+    border: none;
+    padding-bottom: 0px !important;
+}
+
+.profilement {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    margin-left: 5%;
+    margin-top: 2px;
+}
+
+.nameprofilement {
+    padding-left: 10px;
+    padding-top: 4px;
+    color: rgb(235, 235, 235);
+    font-size: 13px;
+}
+
+.captioncoment {
+    color: rgb(182, 182, 182);
+    font-size: 12px;
+    margin-left: 37px;
+}
+
+.garis {
+    color: white;
+    margin-top: -1px;
+}
+
+.inputcoment {
+    height: 40px;
+    border: none;
+    font-size: 12px;
+    color: rgb(204, 204, 204);
+    margin-top: 100px;
+}
+
+.inputcoment:focus {
+    border: none;
+}
+
+.iconment {
+    padding: 0px;
+    height: 2px;
+}
+
+.iconment {
+    color: white !important;
+    font-size: 18px;
+}
+
+.icon3 {
+    margin-top: 110px !important;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.mlprof {
+    margin-left: 2px;
+}
+
+.likements {
+    position: absolute;
+    color: rgb(204, 204, 204) !important;
+    font-size: 11px;
+    margin-top: 180px;
+}

@@ -1,0 +1,38 @@
+.cardchat {
+    background-color: #0B0B0B;
+    color: white;
+}
+
+.boxprofile {
+    width: 45px;
+    height: 43px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border-radius: 50px;
+}
+
+.profilechat {
+    border-radius: 50px;
+    width: 40px;
+    height: 39px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.inlinechat {
+    display: flex;
+}
+
+.namechat {
+    font-size: 13px !important;
+    margin-left: 20px;
+}
+
+.namechatpeople {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.chatrender {
+    color: rgb(199, 199, 199);
+    font-size: 12px;
+}
