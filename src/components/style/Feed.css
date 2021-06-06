@@ -17,6 +17,10 @@ htmk, body {
     background-color: #0B0B0B;
 }
 
+.cursorfeed {
+    cursor: pointer;
+}
+
 .bar{
     height: 30px;
     background-color: #0B0B0B !important;

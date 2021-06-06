@@ -7,7 +7,9 @@ import '../style/Feed.css'
 // ------------- Aos -----------------
 import Aos from "aos";
 import "aos/dist/aos.css"
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
+import DetailFeed from './DetailFeed'
 
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,6 +26,12 @@ import Rectagle6 from '../asset/Rectangle 14.jpg';
 import zayn from '../asset/zeny.png'
 
 function FeedFeed() {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     // aos duration
     useEffect(() => {
         Aos.init({ duration: 1000 });
@@ -104,7 +112,7 @@ function FeedFeed() {
                 </Col>
                 <Col md={4}>
                     <Card style={{ width: '18rem' }} className="cardfeed">
-                        <Card.Img variant="top" className="imgfeed" src={Rectagle2} />
+                        <Card.Img variant="top" className="imgfeed cursorfeed" onClick={handleShow} src={Rectagle2} />
                         <Card.Body>
                             <Card.Text className="card-bodys">
                                 <Navbar class="prof-box">
@@ -204,6 +212,7 @@ function FeedFeed() {
                     </Card>
                 </Col>
             </div>
+            <DetailFeed show={show} handleClose={handleClose} />
             <br />
             <br />
         </>

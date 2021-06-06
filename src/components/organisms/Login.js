@@ -10,7 +10,6 @@ import '../style/Login.css';
 function Login(props) {
 
     const [show, setShow] = useState(props.isOpen);
-
     const handleClose = () => setShow(false);
 
     // register
