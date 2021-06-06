@@ -1,0 +1,64 @@
+/* --------------------------------- style Register ------------------------------- */
+.modal-header {
+    background-color: #1F1F1F;
+    color: white;
+    font-size: 36px;
+    padding-left: 8%;
+    padding-top: 7%;
+}
+
+.modal-dialog {
+    border-radius: 10px;
+}
+
+.Reg {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-body {
+    background-color: #1F1F1F;
+}
+
+.form-controls {
+    height: 50px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #D2D2D2;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.form-control:focus {
+    background: rgba(210, 210, 210, 0.25);
+    box-shadow: none;
+    border: 2px solid #D2D2D2;
+    color: #D2D2D2;
+}
+
+.btlogin {
+    width: 90%;
+    margin-left: 5%;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border: none;
+}
+
+.btlogin:hover {
+    background: linear-gradient(70deg, #FBDF63  0%, #9090FB 36.46%, #FF6B81 71.35%,#4DD4F7 100%);
+}
+
+.loginend {
+    color: #B1B1B1;
+}
+
+.linklogin {
+    text-decoration: none;
+    color: #B1B1B1;
+    font-weight: bold;
+}
+
+.linklogin:hover{
+    color: #B1B1B1;
+}

@@ -1,0 +1,325 @@
+htmk, body {
+    overflow-x: hidden;
+    background-color: #0B0B0B;
+}
+
+.profile {
+    background-color: #0B0B0B;
+    height: 100vh;
+    position: fixed;
+    width: 30%;
+    border-right: 1px solid rgba(106, 106, 106, 0.3);;
+}
+
+.feed {
+    margin-left: 31%;
+    color: white;
+    background-color: #0B0B0B;
+}
+
+.bar{
+    height: 30px;
+    background-color: #0B0B0B !important;
+}
+
+.logos {
+    width: 30%;
+}
+
+.bg-card {
+    background-color: #0B0B0B !important;
+}
+
+.icon-edit {
+    color: #ABABAB;
+}
+
+.logoprofile {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: 5px;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border-radius: 50%;
+    margin-left: 32%;
+}
+
+.namaprofile {
+    color: white;
+    font-size: 25px;
+}
+
+.namagm {
+    color: #ABABAB;
+    margin-top: -4px;
+    font-size: 13px;
+}
+
+.barfollow {
+    color: #ABABAB;
+}
+
+.panel {
+    border-right: 1px solid rgba(106, 106, 106, 0.3);
+    height: 60px;
+    font-size: 13px;
+}
+
+.panels {
+    font-size: 13px;
+}
+
+.jumlah {
+    margin-top: -10px;
+    color: white;
+    font-size: 15px;
+}
+
+.bio {
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 36px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.menu {
+    border-top: 1px solid rgba(106, 106, 106, 0.3);
+    border-bottom: 1px solid rgba(106, 106, 106, 0.3);
+    text-align: left;
+    margin-left: 10%;
+    font-size: 18px;
+    width: 84%;
+    padding-top: 26px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
+.bartpostnotif {
+    background-color: #0B0B0B;
+    margin-left: 30%;
+    padding-bottom: 50px;
+}
+
+
+.icon-feed {
+    color: white;
+}
+
+.title-feed {
+    color: white;
+    margin-left: -10%;
+    font-size: 14px;
+    text-decoration: none !important;
+}
+
+.title-feed-a {
+    text-decoration: none;
+}
+
+.icon-explore {
+    color: #ABABAB;
+}
+
+.title-explore {
+    color: #ABABAB;
+    margin-left: -10%;
+    font-size: 14px;
+}
+
+.icon-logout {
+    color: #ABABAB;
+    text-align: left;
+}
+
+.title-logout {
+    color: #ABABAB;
+    font-size: 14px;
+    margin-top: 200px;
+    margin-left: -10%;
+}
+
+.logout {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 18px;
+    padding-top: 23px;
+}
+
+.navbarFeed {
+    background-color: #0B0B0B;
+}
+
+.cariFeeds {
+    width: 350px !important;
+    background-color: rgba(210, 210, 210, 0.25);
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 5px;
+}
+
+.cariFeeds:focus {
+    border: none;
+}
+
+.icon-serch-feed {
+    background-color: rgba(210, 210, 210, 0.25);
+    border: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #ABABAB;
+    margin-top: 5px;
+    height: 36px;
+}
+
+.tombol-kanan {
+    margin-left: 210% !important;
+    margin-top: -60px;
+}
+
+.create-post {
+    width: 140px;
+    height: 38px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border: none;
+}
+
+.icon-pesan {
+    margin-top: 20px !important;
+    color: rebeccapurple;
+}
+
+.button-post {
+    margin-top: 5px;
+    width: 130px;
+    height: 36px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border: none;
+    font-size: 14px;
+}
+
+
+.icon-Notifikasi {
+    color: #ABABAB;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.icon-plus {
+    font-size: 12px;
+}
+
+.plusquar {
+    background: rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 7px !important;
+    padding-left: 7px !important;
+}
+
+.create {
+    margin-top: -30px !important;
+}
+
+.JudulFeed {
+    position: absolute;
+    font-size: 25px;
+    margin-top: 115px !important;
+}
+
+.cardfeed {
+    background-color: #0B0B0B;
+    justify-content: space-around;
+}
+
+.imgfeed {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.prof-box {
+    width: 289px;
+    height: 90px !important;
+    margin-left: -18px;
+    margin-top: -10px;
+    background-color: white !important;
+}
+
+.card-profile {
+    width: 85%;
+    margin-top: -80%;
+    margin-left: 7.5%;
+    border-radius: 50%;
+}
+
+.card-box-profile {
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    margin-top: 17px;
+    position: absolute;
+    margin-left: -16px;
+    border-radius: 50%;
+}
+
+.card-icon {
+    color: white;
+    margin-top: 4% !important;
+    position: absolute;
+    color: #ABABAB;
+}
+
+.card-bodys {
+    margin-top: -30px;
+}
+
+.comment {
+    margin-left: -25px;
+}
+
+.heart {
+    margin-left: -55px;
+}
+
+.like {
+    position: absolute;
+    margin-left: 60%;
+    font-size: 14px;
+    color: #ABABAB;
+}
+
+.nama-post {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -13px;
+}
+
+.masoryholder {
+    columns: 3;
+    column-gap: 20px;
+    margin-top: 120px;
+}
+
+.masoryholder .cardfeed {
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+.navlike {
+    width: 107%!important;
+    height: 30px;
+}
+
+.jmllike {
+    color: #ABABAB;
+    margin-top: 10px;
+    font-size: 12px;
+}
