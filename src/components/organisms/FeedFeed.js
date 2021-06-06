@@ -1,7 +1,9 @@
+
 // ------------- Bootstrap --------------
 import { Navbar, InputGroup, FormControl, Button, Col, Card, Container } from 'react-bootstrap';
 
 // ----------- feed.css ----------------
+import Notifikasi from './Notifikasi';
 import '../style/Feed.css'
 
 // ------------- Aos -----------------
@@ -14,7 +16,7 @@ import DetailFeed from './DetailFeed'
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { faComment, faHeart, faPaperPlane, faBell } from '@fortawesome/free-regular-svg-icons';
+import { faComment, faHeart, faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
 // ----------- asser ------------
 import Rectagle1 from '../asset/Rectangle 6.jpg';
@@ -48,7 +50,7 @@ function FeedFeed() {
                     <p className="JudulFeed">Feed</p>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <FontAwesomeIcon className="icon-Notifikasi" icon={faBell} />
+                        <Notifikasi />
                         <a href="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></a>
                         <Navbar.Text>
                             <a href="/CreatePostPage">
@@ -67,7 +69,7 @@ function FeedFeed() {
                             <Card.Text className="card-bodys">
                                 <Navbar class="prof-box">
                                     <Navbar.Brand href="#home" className="card-box-profile">
-                                        <img src={zayn} className="card-profile" alt="logo" />
+                                        <img src={zayn} className="card-profiles" alt="logo" />
                                     </Navbar.Brand>
                                     <Navbar.Text className="ms-auto">
                                         <FontAwesomeIcon className="card-icon heart" icon={faHeart} />
@@ -92,7 +94,7 @@ function FeedFeed() {
                             <Card.Text className="card-bodys">
                                 <Navbar class="prof-box">
                                     <Navbar.Brand href="#home" className="card-box-profile">
-                                        <img src={zayn} className="card-profile" alt="logo" />
+                                        <img src={zayn} className="card-profiles" alt="logo" />
                                     </Navbar.Brand>
                                     <Navbar.Text className="ms-auto">
                                         <FontAwesomeIcon className="card-icon heart" icon={faHeart} />
@@ -117,7 +119,7 @@ function FeedFeed() {
                             <Card.Text className="card-bodys">
                                 <Navbar class="prof-box">
                                     <Navbar.Brand href="#home" className="card-box-profile">
-                                        <img src={zayn} className="card-profile" alt="logo" />
+                                        <img src={zayn} className="card-profiles" alt="logo" />
                                     </Navbar.Brand>
                                     <Navbar.Text className="ms-auto">
                                         <FontAwesomeIcon className="card-icon heart" icon={faHeart} />
@@ -143,7 +145,7 @@ function FeedFeed() {
                             <Card.Text className="card-bodys">
                                 <Navbar class="prof-box">
                                     <Navbar.Brand href="#home" className="card-box-profile">
-                                        <img src={zayn} className="card-profile" alt="logo" />
+                                        <img src={zayn} className="card-profiles" alt="logo" />
                                     </Navbar.Brand>
                                     <Navbar.Text className="ms-auto">
                                         <FontAwesomeIcon className="card-icon heart" icon={faHeart} />
@@ -168,7 +170,7 @@ function FeedFeed() {
                             <Card.Text className="card-bodys">
                                 <Navbar class="prof-box">
                                     <Navbar.Brand href="#home" className="card-box-profile">
-                                        <img src={zayn} className="card-profile" alt="logo" />
+                                        <img src={zayn} className="card-profiles" alt="logo" />
                                     </Navbar.Brand>
                                     <Navbar.Text className="ms-auto">
                                         <FontAwesomeIcon className="card-icon heart" icon={faHeart} />
@@ -193,7 +195,7 @@ function FeedFeed() {
                             <Card.Text className="card-bodys">
                                 <Navbar class="prof-box">
                                     <Navbar.Brand href="#home" className="card-box-profile">
-                                        <img src={zayn} className="card-profile" alt="logo" />
+                                        <img src={zayn} className="card-profiles" alt="logo" />
                                     </Navbar.Brand>
                                     <Navbar.Text className="ms-auto">
                                         <FontAwesomeIcon className="card-icon heart" icon={faHeart} />

@@ -1,0 +1,76 @@
+.icon-Notifikasi {
+    cursor: pointer;
+}
+
+.cont {
+    color: rgb(255, 255, 255);
+}
+
+.bgnot {
+    background-color: red;
+}
+
+.ant-popover-inner {
+       background-color: #1F1F1F;
+       width: 220px;
+       border-radius: 20px;
+    }
+    .ant-popover-title {
+       color: #1F1F1F;
+    }
+
+    .ant-popover-arrow-content {
+        background-color: #1F1F1F;
+
+    }
+
+    .ant-popover-inner-content {
+        background-color: #1F1F1F;
+    }
+    
+.ovalnotif {
+    margin-top: 2px;
+    width: 30px;
+    height: 29px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border-radius: 50px;
+}
+
+.profilnotif {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.cardnotif {
+    background-color: #1F1F1F;
+    border: none;
+    display: flex;
+}
+
+.starttif {
+    display: flex;
+}
+
+.starttif {
+    font-size: 12px;
+}
+
+.namenotif {
+    margin-top: -15px;
+}
+
+.namenotif {
+     position: absolute;
+}
+
+.namenotif {
+    font-size: 13px;
+}
+ 
+
+.komentnotif {
+    color: #acacac;
+}

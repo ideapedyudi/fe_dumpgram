@@ -1,7 +1,7 @@
-// ------------- Aos --------------
+// ------------- Bootstrap --------------
 import { Row, Col, Navbar, Card } from 'react-bootstrap';
 
-import '../style/Feed.css'
+import '../style/Feed.css';
 
 // ------------- Aos --------------
 // import Aos from "aos";

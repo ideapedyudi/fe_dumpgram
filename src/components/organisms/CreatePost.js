@@ -3,6 +3,7 @@ import { Navbar, InputGroup, FormControl, Button, Container, Form } from 'react-
 
 // ----------- feed.css ----------------
 import '../style/CreatePostEdit.css'
+import Notifikasi from './Notifikasi';
 
 // ------------- Aos -----------------
 import Aos from "aos";
@@ -12,7 +13,7 @@ import { useEffect } from 'react';
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { faPaperPlane, faBell } from '@fortawesome/free-regular-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
 function CreatePost() {
     // aos duration
@@ -31,7 +32,7 @@ function CreatePost() {
                     <p className="JudulFeed">Create Post</p>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <FontAwesomeIcon className="icon-Notifikasi" icon={faBell} />
+                        <Notifikasi />
                         <a href="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></a>
                         <Navbar.Text>
                             <a href="/CreatePostPage">

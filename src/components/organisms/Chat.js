@@ -2,6 +2,7 @@
 import { Navbar, InputGroup, FormControl, Button, Container, Card } from 'react-bootstrap';
 
 // ----------- Explore.css ----------------
+import Notifikasi from './Notifikasi';
 import '../style/Explore.css';
 import '../style/Chat.css';
 
@@ -17,7 +18,7 @@ import Profile2 from '../asset/zeny.png';
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { faPaperPlane, faBell } from '@fortawesome/free-regular-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
 function Chat() {
     // aos duration
@@ -33,7 +34,7 @@ function Chat() {
                     </InputGroup.Prepend>
                     <FormControl className="cariFeeds" placeholder="Search" />
                     <Navbar.Collapse className="justify-content-end">
-                        <FontAwesomeIcon className="icon-Notifikasi" icon={faBell} />
+                        <Notifikasi />
                         <a href="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></a>
                         <Navbar.Text>
                             <a href="/CreatePostPage">

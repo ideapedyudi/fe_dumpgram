@@ -3,6 +3,7 @@ import { Navbar, InputGroup, FormControl, Button, Col, Card, Container } from 'r
 
 // ----------- Explore.css ----------------
 import '../style/Explore.css'
+import Notifikasi from './Notifikasi';
 
 // ------------- Aos --------------
 import Aos from "aos";
@@ -12,7 +13,7 @@ import { useEffect } from 'react';
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { faPaperPlane, faBell } from '@fortawesome/free-regular-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
 // ----------- asset ------------
 import Rectagle1 from '../asset/Rectangle 6.jpg';
@@ -38,7 +39,7 @@ function ExploreExplore() {
                     <p className="JudulFeed">Explore</p>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <FontAwesomeIcon className="icon-Notifikasi" icon={faBell} />
+                        <Notifikasi />
                         <a href="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></a>
                         <Navbar.Text>
                             <a href="/CreatePostPage">
