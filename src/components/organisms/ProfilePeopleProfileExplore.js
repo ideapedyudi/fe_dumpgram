@@ -20,7 +20,7 @@ function ProfilPeopleProfilFeed() {
     return (
         <>
             {/* --------------------------- card profile people explore -------------------------- */}
-            <Navbar bg="dark" className="bar">
+            <Navbar bg="dark" className="bar logogram">
                 <a href="/feedpage">
                     <img src={DumbGram} className="logos ms-4 mt-5" alt="logo" />
                 </a>

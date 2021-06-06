@@ -7,6 +7,7 @@ import ProfilePeopleExplore from './components/pages/ProfilePeopleExplore';
 import CreatePostPage from './components/pages/CreatePostPage';
 import MessagePage from './components/pages/MessagePage';
 import ChatPage from './components/pages/ChatPage';
+import EditProfilePage from './components/pages/EditProfilePage';
 
 // ---- rounter -----
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/CreatePostPage" exact component={CreatePostPage} />
           <Route path="/MessagePage" exact component={MessagePage} />
           <Route path="/ChatPage" exact component={ChatPage} />
+          <Route path="/EditProfilePage" exact component={EditProfilePage} />
         </Switch>
       </Router>
     </div>

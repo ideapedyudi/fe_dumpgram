@@ -44,79 +44,65 @@ function Chat() {
                 </Container>
             </Navbar>
             {/* image expore */}
-            <div className="NoMassage" data-aos="fade-up">
+            <div className="NoMassage">
                 <Card style={{ width: '40rem' }} className="cardchat ms-3">
-                    <Card.Body className="inlinechat">
+                    <Card.Body className="inlinechat" data-aos="fade-up">
                         <div class="boxprofile">
-                            <a href="/ChatPage">
-                                <Card.Img variant="top" src={Profile2} className="profilechat" />
-                            </a>
+                            <Card.Img variant="top" src={Profile2} className="profilechat" />
                         </div>
                         <Card.Text className="namechat">
                             <Card.Title className="namechatpeople text-start">zayn malik</Card.Title>
                             <Card.Title className="chatrender text-start">Hai Lisa </Card.Title>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Body className="inlinechat">
+                    <Card.Body className="inlinechat" data-aos="fade-up">
                         <div class="boxprofile">
-                            <a href="/ChatPage">
-                                <Card.Img variant="top" src={Profile} className="profilechat" />
-                            </a>
+                            <Card.Img variant="top" src={Profile} className="profilechat" />
                         </div>
                         <Card.Text className="namechat">
                             <Card.Title className="namechatpeople text-start">lisa</Card.Title>
                             <Card.Title className="chatrender text-start">Hai zayn</Card.Title>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Body className="inlinechat">
+                    <Card.Body className="inlinechat" data-aos="fade-up">
                         <div class="boxprofile">
-                            <a href="/ChatPage">
-                                <Card.Img variant="top" src={Profile2} className="profilechat" />
-                            </a>
+                            <Card.Img variant="top" src={Profile2} className="profilechat" />
                         </div>
                         <Card.Text className="namechat">
                             <Card.Title className="namechatpeople text-start">zayn malik</Card.Title>
                             <Card.Title className="chatrender text-start">Hai Lisa</Card.Title>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Body className="inlinechat">
+                    <Card.Body className="inlinechat" data-aos="fade-up">
                         <div class="boxprofile">
-                            <a href="/ChatPage">
-                                <Card.Img variant="top" src={Profile} className="profilechat" />
-                            </a>
+                            <Card.Img variant="top" src={Profile} className="profilechat" />
                         </div>
                         <Card.Text className="namechat">
                             <Card.Title className="namechatpeople text-start">lisa</Card.Title>
                             <Card.Title className="chatrender text-start">Hai zayn</Card.Title>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Body className="inlinechat">
+                    <Card.Body className="inlinechat" data-aos="fade-up">
                         <div class="boxprofile">
-                            <a href="/ChatPage">
-                                <Card.Img variant="top" src={Profile2} className="profilechat" />
-                            </a>
+                            <Card.Img variant="top" src={Profile2} className="profilechat" />
                         </div>
                         <Card.Text className="namechat">
                             <Card.Title className="namechatpeople text-start">zayn malik</Card.Title>
                             <Card.Title className="chatrender text-start">Hai Lisa</Card.Title>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Body className="inlinechat">
+                    <Card.Body className="inlinechat" data-aos="fade-up">
                         <div class="boxprofile">
-                            <a href="/ChatPage">
-                                <Card.Img variant="top" src={Profile} className="profilechat" />
-                            </a>
+                            <Card.Img variant="top" src={Profile} className="profilechat" />
                         </div>
                         <Card.Text className="namechat">
-                            <Card.Title className="namechatpeople text-start">zayn malik</Card.Title>
+                            <Card.Title className="namechatpeople text-start">lisa</Card.Title>
                             <Card.Title className="chatrender text-start">Hai zayn</Card.Title>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Body className="inlinechat">
+                    <Card.Body className="inlinechat" data-aos="fade-up">
                         <div class="boxprofile">
-                            <a href="/ChatPage">
-                                <Card.Img variant="top" src={Profile2} className="profilechat" />
-                            </a>
+                            <Card.Img variant="top" src={Profile2} className="profilechat" />
                         </div>
                         <Card.Text className="namechat">
                             <Card.Title className="namechatpeople text-start">zayn malik</Card.Title>

@@ -2,7 +2,9 @@
 import { Navbar, InputGroup, FormControl, Button, Container, Form } from 'react-bootstrap';
 
 // ----------- feed.css ----------------
-import '../style/CreatePostEdit.css'
+import '../style/CreatePostEdit.css';
+import '../style/EditProfile.css';
+
 
 // ------------- Aos -----------------
 import Aos from "aos";
@@ -14,7 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane, faBell } from '@fortawesome/free-regular-svg-icons';
 
-function CreatePost() {
+function EditProfile() {
     // aos duration
     useEffect(() => {
         Aos.init({ duration: 1000 });
@@ -28,7 +30,7 @@ function CreatePost() {
                         <InputGroup.Text className="icon-serch-feed" id="basic-addon1"><FontAwesomeIcon icon={faSearch} /></InputGroup.Text>
                     </InputGroup.Prepend>
                     <FormControl className="cariFeeds" placeholder="Search" />
-                    <p className="JudulFeed">Create Post</p>
+                    <p className="JudulFeed">Edit Profile</p>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <FontAwesomeIcon className="icon-Notifikasi" icon={faBell} />
@@ -43,15 +45,19 @@ function CreatePost() {
             </Navbar>
             {/* image feed */}
             <div className="masoryholders" data-aos="fade-up"> <br />
-                <Button className="tbupload justify-content-center">Upload Photo Or Video</Button>
-                <Form>
+                <Button className="tbupload justify-content-center">Upload Photo</Button>
+                <Form> <br />
+                    <div>
+                        <Form.Control className="EditProfile" type="text" placeholder="Name" /> <br />
+                        <Form.Control className="EditProfile" type="text" placeholder="Username" /> <br />
+                    </div>
                     <Form.Control
-                        className="caption"
+                        className="captionss"
                         as="textarea"
-                        placeholder="Caption"
+                        placeholder="Bio"
                         style={{ height: '170px' }}
                     />
-                    <Button className="tbupload justify-content-center mt-5 ms-lg-auto uploadbtn">Upload</Button>
+                    <Button className="tbupload justify-content-center mt-4 ms-lg-auto uploadbtn">Save</Button>
                 </Form>
             </div>
             <br />
@@ -60,4 +66,5 @@ function CreatePost() {
     )
 }
 
-export default CreatePost
+export default EditProfile
+

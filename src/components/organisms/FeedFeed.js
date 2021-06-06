@@ -129,7 +129,7 @@ function FeedFeed() {
                             </Card.Text>
                             <Navbar className="navlike">
                                 <Navbar.Text className="ms-auto">
-                                    <p className="jmllike">126.100 Like</p>
+                                    <p className="jmllike">156.290 Like</p>
                                 </Navbar.Text>
                             </Navbar>
                         </Card.Body>
@@ -180,7 +180,7 @@ function FeedFeed() {
                             </Card.Text>
                             <Navbar className="navlike">
                                 <Navbar.Text className="ms-auto">
-                                    <p className="jmllike">126.100 Like</p>
+                                    <p className="jmllike">136.000 Like</p>
                                 </Navbar.Text>
                             </Navbar>
                         </Card.Body>

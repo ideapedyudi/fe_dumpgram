@@ -8,10 +8,6 @@ import '../style/ProfileMessange.css'
 // import Aos from "aos";
 import "aos/dist/aos.css"
 
-// ------------- fontawesome -----------
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit } from '@fortawesome/free-regular-svg-icons';
-
 // ------------- asset ------------
 import DumbGram from '../asset/DumbGram.svg';
 import Profile from '../asset/Rectangle 4.jpg';

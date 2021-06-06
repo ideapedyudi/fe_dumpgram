@@ -26,7 +26,9 @@ function ProfileFeed() {
                 </a>
             </Navbar>
             <Card className="bg-card text-center mt-3">
-                <FontAwesomeIcon className="ms-auto me-5 icon-edit" icon={faEdit} />
+                <a href="/EditProfilePage" className="ms-auto">
+                    <FontAwesomeIcon className="ms-auto icon-edit me-5" icon={faEdit} />
+                </a>
                 <Card.Body>
                     <Card.Text>
                         <div className="circle">
