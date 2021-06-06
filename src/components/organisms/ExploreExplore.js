@@ -7,7 +7,7 @@ import '../style/Explore.css'
 // ------------- Aos --------------
 import Aos from "aos";
 import "aos/dist/aos.css"
-import { useEffect } from 'react'; 
+import { useEffect } from 'react';
 
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -41,7 +41,9 @@ function ExploreExplore() {
                         <FontAwesomeIcon className="icon-Notifikasi" icon={faBell} />
                         <FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} />
                         <Navbar.Text>
-                            <Button className="button-post"><span className="plusquar"><FontAwesomeIcon className="icon-plus" icon={faPlus} /></span> &nbsp;<span className="create">Create Post</span></Button>
+                            <a href="/CreatePostPage">
+                                <Button className="button-post"><span className="plusquar"><FontAwesomeIcon className="icon-plus" icon={faPlus} /></span> &nbsp;<span className="create">Create Post</span></Button>
+                            </a>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
