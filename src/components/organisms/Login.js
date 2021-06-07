@@ -23,7 +23,7 @@ function Login(props) {
         <>
             {/* ----------- modal ---------- */}
             { showRegisterModal ? <Register isOpen={true} /> : null}
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose} className="loginModal">
                 <Modal.Header className="border-0 modal-header">
                     <Modal.Title>Login</Modal.Title>
                 </Modal.Header>

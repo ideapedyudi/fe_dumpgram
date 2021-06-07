@@ -67,3 +67,8 @@
 .linklogin:hover{
     color: #B1B1B1;
 }
+
+.loginRegister {
+    width: 400px;
+    margin: 60px 35%;
+}

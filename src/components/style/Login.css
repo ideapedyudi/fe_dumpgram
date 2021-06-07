@@ -62,3 +62,7 @@
 .linklogin:hover{
     color: #B1B1B1;
 }
+
+.loginModal {
+    margin-top: 9%;
+}
