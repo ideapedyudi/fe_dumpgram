@@ -90,3 +90,7 @@ function DetailFeed(props) {
 }
 
 export default DetailFeed
+
+
+
+
