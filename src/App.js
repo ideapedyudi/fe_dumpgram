@@ -11,24 +11,29 @@ import EditProfilePage from './components/pages/EditProfilePage';
 import Notifikasi from './components/organisms/Notifikasi';
 
 // ---- rounter -----
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Router>
+
         <Switch>
           {/* landing page */}
           <Route path="/" exact component={LandingPage} />
-          <Route path="/FeedPage" exact component={FeedPage} />
-          <Route path="/ExplorePage" exact component={ExplorePage} />
-          <Route path="/ProfilePeopleFeed" exact component={ProfilePeopleFeed} />
-          <Route path="/ProfilePeopleExplore" exact component={ProfilePeopleExplore} />
-          <Route path="/CreatePostPage" exact component={CreatePostPage} />
-          <Route path="/MessagePage" exact component={MessagePage} />
-          <Route path="/ChatPage" exact component={ChatPage} />
-          <Route path="/EditProfilePage" exact component={EditProfilePage} />
-          <Route path="/Notifikasi" exact component={Notifikasi} />
+          <Route path="/FeedPage" component={FeedPage} />
+          <Route path="/ExplorePage" component={ExplorePage} />
+          <Route path="/ProfilePeopleFeed" component={ProfilePeopleFeed} />
+          <Route path="/ProfilePeopleExplore" component={ProfilePeopleExplore} />
+          <Route path="/CreatePostPage" component={CreatePostPage} />
+          <Route path="/MessagePage" component={MessagePage} />
+          <Route path="/ChatPage" component={ChatPage} />
+          <Route path="/EditProfilePage" component={EditProfilePage} />
+          <Route path="/Notifikasi" component={Notifikasi} />
         </Switch>
       </Router>
     </div>

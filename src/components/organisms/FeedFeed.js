@@ -2,16 +2,19 @@
 // ------------- Bootstrap --------------
 import { Navbar, InputGroup, FormControl, Button, Col, Card, Container } from 'react-bootstrap';
 
+// -------- router -------------
+import { Link } from "react-router-dom";
+
 // ----------- feed.css ----------------
 import Notifikasi from './Notifikasi';
-import '../style/Feed.css'
+import '../style/Feed.css';
 
 // ------------- Aos -----------------
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 import { useEffect, useState } from 'react';
 
-import DetailFeed from './DetailFeed'
+import DetailFeed from './DetailFeed';
 
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,7 +28,7 @@ import Rectagle3 from '../asset/Rectangle 8.jpg';
 import Rectagle4 from '../asset/Rectangle 13.jpg';
 import Rectagle5 from '../asset/Rectangle 3.jpg';
 import Rectagle6 from '../asset/Rectangle 14.jpg';
-import zayn from '../asset/zeny.png'
+import zayn from '../asset/zeny.png';
 
 function FeedFeed() {
 
@@ -51,15 +54,16 @@ function FeedFeed() {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Notifikasi />
-                        <a href="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></a>
+                        <Link to="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></Link>
                         <Navbar.Text>
-                            <a href="/CreatePostPage">
+                            <Link to="/CreatePostPage">
                                 <Button className="button-post"><span className="plusquar"><FontAwesomeIcon className="icon-plus" icon={faPlus} /></span> &nbsp;<span className="create">Create Post</span></Button>
-                            </a>
+                            </Link>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
             {/* image feed */}
             <div className="masoryholder" data-aos="fade-up">
                 <Col md={4}>

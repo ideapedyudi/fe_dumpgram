@@ -1,13 +1,16 @@
 // ------------- Bootstrap --------------
 import { Navbar, InputGroup, FormControl, Button, Container, Form } from 'react-bootstrap';
 
+// -------- router -------------
+import { Link } from "react-router-dom";
+
 // ----------- feed.css ----------------
-import '../style/CreatePostEdit.css'
+import '../style/CreatePostEdit.css';
 import Notifikasi from './Notifikasi';
 
 // ------------- Aos -----------------
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 import { useEffect } from 'react';
 
 // ------------- fontawesome -----------
@@ -33,11 +36,11 @@ function CreatePost() {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Notifikasi />
-                        <a href="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></a>
+                        <Link to="/MessagePage"><FontAwesomeIcon className="icon-Notifikasi" icon={faPaperPlane} /></Link>
                         <Navbar.Text>
-                            <a href="/CreatePostPage">
+                            <Link to="/CreatePostPage">
                                 <Button className="button-post"><span className="plusquar"><FontAwesomeIcon className="icon-plus" icon={faPlus} /></span> &nbsp;<span className="create">Create Post</span></Button>
-                            </a>
+                            </Link>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>

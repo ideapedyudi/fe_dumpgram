@@ -10,11 +10,13 @@ function ExplorePage() {
         <div>
             <div>
                 <Row>
+                    {/* -------------------------- ProfileExplore -----------------------  */}
                     <Col lg={4} className="profile" fixed="top">
                         <br />
                         <ProfileExplore />
                     </Col>
 
+                    {/* -------------------------- ExploreExplore -----------------------  */}
                     <Col lg={8} className="feed">
                         <ExploreExplore />
                     </Col>

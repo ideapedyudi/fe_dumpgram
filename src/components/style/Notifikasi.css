@@ -1,3 +1,4 @@
+/* ------------------------------------ style notifikasi -------------------------------- */
 .icon-Notifikasi {
     cursor: pointer;
 }
@@ -19,13 +20,17 @@
        color: #1F1F1F;
     }
 
-    .ant-popover-arrow-content {
-        background-color: #1F1F1F;
-
+    .ant-popover  {
+       position: fixed;
     }
 
     .ant-popover-inner-content {
         background-color: #1F1F1F;
+       height: 200px !important;
+       overflow-y: scroll;
+       overflow-x: hidden;
+       border-radius: 5px;
+       position: fixed;
     }
     
 .ovalnotif {
@@ -73,4 +78,16 @@
 
 .komentnotif {
     color: #acacac;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {      
+    background: #666;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #232323;
 }

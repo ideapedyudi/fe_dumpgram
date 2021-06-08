@@ -1,13 +1,16 @@
 // ------------- Bootstrap -------------
 import { Modal, Card, Col, Row, Form, Navbar, Container } from 'react-bootstrap';
 
-// ------------ style -------------
-import '../style/DetailFeed.css'
+// -------- router -------------
+import { Link } from "react-router-dom";
 
+// ------------ style -------------
+import '../style/DetailFeed.css';
+
+// ------------ asset --------------
 import Rectagle2 from '../asset/Rectangle 10.jpg';
 import Profile from '../asset/zeny.png';
 import ProfileComent from '../asset/Rectangle 4.jpg';
-
 
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -35,9 +38,9 @@ function DetailFeed(props) {
                         <Col lg={4}>
                             <Card style={{ width: '17rem' }} className="cardcoment">
                                 <div className="circlement">
-                                    <a href="/ProfilePeopleFeed">
+                                    <Link to="/ProfilePeopleFeed">
                                         <Card.Img variant="top" src={Profile} className="profilement mlprof" />
-                                    </a>
+                                    </Link>
                                     <p className="nameprofilement">Zayn</p>
                                 </div>
                                 <p className="captioncoment">To Begin Again</p>

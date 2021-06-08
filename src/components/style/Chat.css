@@ -1,3 +1,4 @@
+/* ------------------------------------ style chat -------------------------------- */
 .barmassage {
     width: 120% !important;
     background: rgba(210, 210, 210, 0.25);
@@ -20,4 +21,19 @@
     height: 80px;
     background: rgba(39, 39, 39);
     margin-left: 29%;
+}
+
+.profileChat {
+    border-radius: 50px;
+    width: 40px;
+    height: 39px;
+    margin-top: 2px;
+    margin-left: -1px;
+}
+
+.boxproFile {
+    width: 44px;
+    height: 42px;
+    background: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    border-radius: 50px;
 }

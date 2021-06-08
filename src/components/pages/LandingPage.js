@@ -1,10 +1,12 @@
+import { useEffect, useState } from "react";
+
 // ---------- bootstrap -----------
 import { Jumbotron, Button, Container, Row, Col, Navbar } from 'react-bootstrap';
 import '../style/LandingPage.css';
-import { useEffect, useState } from "react";
+
 // ------------- Aos --------------
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 // ------------- asset ------------
 import DumbGram from '../asset/DumbGram.svg';
@@ -21,7 +23,7 @@ import Rectagle8 from '../asset/Rectangle 12.jpg';
 import Login from '../organisms/Login';
 
 // ----------- register ----------
-import Register from '../organisms/Register'
+import Register from '../organisms/Register';
 
 function LandingPage() {
 
@@ -37,6 +39,7 @@ function LandingPage() {
     useEffect(() => {
         Aos.init({ duration: 900 });
     }, [])
+
     return (
         <div>
             {/* ------------------------------------------- pembuka jumbotron page ------------------------------------------ */}

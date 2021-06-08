@@ -1,10 +1,15 @@
 import { useState } from "react";
+
+// ------------ bootstrap ----------
 import { Button, Form, Modal } from 'react-bootstrap';
 
+// -------- router -------------
+import { Link } from "react-router-dom";
 
 // ------------ register -----------
-import Register from '../organisms/Register'
+import Register from '../organisms/Register';
 
+// ------------ style ------------
 import '../style/Login.css';
 
 function Login(props) {
@@ -32,12 +37,12 @@ function Login(props) {
                     <Form>
                         <Form.Control className="form-controls" type="text" placeholder="Email" /> <br />
                         <Form.Control className="form-controls" type="password" placeholder="Password" /> <br />
-                        <a href="/feedpage">
+                        <Link to="/feedpage">
                             <Button className="btlogin" variant="primary" size="lg">
                                 Login
                             </Button>
-                            {/* ------- Register ----- */}
-                        </a>
+                        </Link>
+                        {/* ------- Register ----- */}
                         <center className="mt-2 loginend">Don't have an account ? Klik <span className="Reg" onClick={handleModalRegister}>Here</span></center>
                     </Form>
                 </Modal.Body>

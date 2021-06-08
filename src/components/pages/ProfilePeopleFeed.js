@@ -12,10 +12,12 @@ function ProfilePeopleFeed() {
     return (
         <div>
             <Row>
+                {/* -------------------------- ProfilePeopleProfilFeed -----------------------  */}
                 <Col lg={4} className="profile" fixed="top">
                     <ProfilePeopleProfilFeed />
                 </Col>
 
+                {/* -------------------------- ProfilPeopleFeed -----------------------  */}
                 <Col lg={8} className="feed">
                     <ProfilPeopleFeed />
                 </Col>

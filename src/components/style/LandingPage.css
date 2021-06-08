@@ -1,4 +1,4 @@
-/* ------------------------------------ Style LandingPage -------------------------------- */
+/* ------------------------------------ style landing page -------------------------------- */
 .jumbotron {
     background-color: #0B0B0B;
     height: 100vh;
@@ -7,6 +7,7 @@
 .logo {
     width: 381px !important;
     height: 124px !important;
+    margin-top: 10px;
 }
 
 .title {
@@ -20,6 +21,7 @@
 .kidstitle {
     font-size: 18px;
     color: #6A6A6A;
+    margin-top: -35px;
 }
 
 .btnlogin {

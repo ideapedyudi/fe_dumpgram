@@ -1,10 +1,17 @@
 import { useState } from 'react';
+
+// -------------- bootstrap ----------------
 import { Button, Form } from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal';
+
+// ------------- style ---------------
 import '../style/Register.css';
-import Login from './Login'
+
+// ----------- modal --------------
+import Login from './Login';
+import Modal from 'react-bootstrap/Modal';
 
 function Register(props) {
+
     // register
     const [show, setShow] = useState(props.isOpen);
     const handleClose = () => setShow(false);
@@ -16,43 +23,6 @@ function Register(props) {
         setShowLogin(!showLogin);
     }
 
-    // menyimpan
-    const [product, setProduct] = useState({
-        email: '',
-        nama: '',
-        username: '',
-        password: ''
-    })
-
-    // values inputan
-    const { email, nama, username, password } = product;
-
-    // ketik
-    const handleOnChange = (e) => {
-        setProduct({
-            ...product,
-            [e.target.name]: e.target.value
-        })
-    }
-
-
-    // ketika tombol submit di tekan
-    const handleOnSubmit = (e) => {
-        // validasi tidak ke url
-        e.preventDefault();
-
-        console.log(product);
-
-        // kosongkan data
-        setProduct({
-            email: '',
-            nama: '',
-            username: '',
-            password: ''
-        })
-    }
-
-
     return (
         <>
             {/* ----------- modal ---------- */}
@@ -63,14 +33,15 @@ function Register(props) {
                 </Modal.Header>
                 <Modal.Body className="modal-body">
                     {/* form */}
-                    <Form onSubmit={handleOnSubmit}>
-                        <Form.Control onChange={handleOnChange} name="email" value={email} className="form-controls" type="text" placeholder="Email" autocomplete="off" required /> <br />
-                        <Form.Control onChange={handleOnChange} name="nama" value={nama} className="form-controls" type="text" placeholder="Name" autocomplete="off" required /> <br />
-                        <Form.Control onChange={handleOnChange} name="username" value={username} className="form-controls" type="text" placeholder="Username" autocomplete="off" required /> <br />
-                        <Form.Control onChange={handleOnChange} name="password" value={password} className="form-controls" type="password" placeholder="Password" autocomplete="off" required /> <br />
-                        <Button className="btlogin" type="submit" variant="primary" size="lg" block>
+                    <Form>
+                        <Form.Control name="email" className="form-controls" type="text" placeholder="Email" autocomplete="off" required /> <br />
+                        <Form.Control name="nama" className="form-controls" type="text" placeholder="Name" autocomplete="off" required /> <br />
+                        <Form.Control name="username" className="form-controls" type="text" placeholder="Username" autocomplete="off" required /> <br />
+                        <Form.Control name="password" className="form-controls" type="password" placeholder="Password" autocomplete="off" required /> <br />
+                        <Button className="btlogin" variant="primary" size="lg" block>
                             Register
                         </Button>
+                        {/* login */}
                         <center className="mt-2 loginend">Already have an account ? Klik  <span className="log" onClick={handleLoginModal}>Here</span></center>
                     </Form>
                 </Modal.Body>
