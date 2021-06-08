@@ -1,12 +1,12 @@
 // ------------- Bootstrap --------------
 import { Card } from 'react-bootstrap';
 
-
+// ------------ ant design ------------
 import { Popover } from 'antd';
 import 'antd/dist/antd.css';
 
 // ------------- fontawesome -----------
-import '../style/Notifikasi.css'
+import '../style/Notifikasi.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 
@@ -28,6 +28,38 @@ function Notifikasi() {
                     </Card.Text>
                         <Card.Text>
                             Komentar : <span className="komentnotif">Nice Place</span>
+                        </Card.Text>
+                    </Card.Body>
+                </div>
+            </Card>
+
+            <Card style={{ width: '12rem' }} className="cardnotif">
+                <div className="starttif">
+                    <div className="ovalnotif">
+                        <Card.Img className="profilnotif" variant="top" src={Profile} />
+                    </div>
+                    <Card.Body className="titlenotif">
+                        <Card.Text className="namenotif">
+                            egi-lol
+                    </Card.Text>
+                        <Card.Text>
+                            Komentar : <span className="komentnotif">Good Vibe</span>
+                        </Card.Text>
+                    </Card.Body>
+                </div>
+            </Card>
+
+            <Card style={{ width: '12rem' }} className="cardnotif">
+                <div className="starttif">
+                    <div className="ovalnotif">
+                        <Card.Img className="profilnotif" variant="top" src={Profile} />
+                    </div>
+                    <Card.Body className="titlenotif">
+                        <Card.Text className="namenotif">
+                            egi-lol
+                    </Card.Text>
+                        <Card.Text>
+                            Komentar : <span className="komentnotif">Good Vibe</span>
                         </Card.Text>
                     </Card.Body>
                 </div>

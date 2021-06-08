@@ -1,3 +1,4 @@
+/* ------------------------------------ style profile message -------------------------------- */
 .cardchat {
     background-color: #0B0B0B;
     color: white;
@@ -22,6 +23,14 @@
     display: flex;
 }
 
+.inlineChat {
+    display: flex;
+}
+
+.inlineChat:hover {
+    background-color: rgb(34, 34, 34);
+}
+
 .namechat {
     font-size: 13px !important;
     margin-left: 20px;
@@ -30,6 +39,7 @@
 .namechatpeople {
     font-size: 15px;
     margin-top: 10px;
+    color: white;
 }
 
 .chatrender {

@@ -1,11 +1,11 @@
 // ------------- Bootstrap --------------
 import { Row, Col, Navbar, Card } from 'react-bootstrap';
 
-import '../style/Feed.css';
+// -------- router -------------
+import { Link } from "react-router-dom";
 
-// ------------- Aos --------------
-// import Aos from "aos";
-import "aos/dist/aos.css"
+// ----------- style --------------
+import '../style/Feed.css';
 
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,14 +21,14 @@ function ProfileFeed() {
         <>
             {/* --------------------------- card profile feed -------------------------- */}
             <Navbar bg="dark" className="bar">
-                <a href="/feedpage">
+                <Link to="/feedpage">
                     <img src={DumbGram} className="logos ms-4" alt="logo" />
-                </a>
+                </Link>
             </Navbar>
             <Card className="bg-card text-center mt-3">
-                <a href="/EditProfilePage" className="ms-auto">
+                <Link to="/EditProfilePage" className="ms-auto">
                     <FontAwesomeIcon className="ms-auto icon-edit me-5" icon={faEdit} />
-                </a>
+                </Link>
                 <Card.Body>
                     <Card.Text>
                         <div className="circle">
@@ -53,12 +53,14 @@ function ProfileFeed() {
                     </Row>
                     <p className="bio">Rapper in Black Pink, Brand Ambasador Penshoppe</p>
                     <div class="menu">
-                        <p> <a href="/feedpage" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-feed" icon={faHome} /><span className="title-feed">Feed</span></a></p>
-                        <p> <a href="/explorepage" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-explore" icon={faCompass} /><span className="title-explore">Explore</span></a></p>
+                        <p> <Link to="/feedpage" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-feed" icon={faHome} /><span className="title-feed">Feed</span></Link></p>
+                        <p> <Link to="/explorepage" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-explore" icon={faCompass} /><span className="title-explore">Explore</span></Link></p>
                     </div>
 
                     <div class="logout">
-                        <p><FontAwesomeIcon className="ms-auto me-5 icon-logout" icon={faSignInAlt} /><span className="title-logout">Logout</span></p>
+                        <Link to="/">
+                            <p><FontAwesomeIcon className="ms-auto me-5 icon-logout" icon={faSignInAlt} /><span className="title-logout">Logout</span></p>
+                        </Link>
                     </div>
                 </Card.Body>
             </Card>

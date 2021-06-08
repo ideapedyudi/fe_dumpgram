@@ -1,4 +1,4 @@
-/* --------------------------------- style Register ------------------------------- */
+/* --------------------------------- style register ------------------------------- */
 .modal-header {
     background-color: #1F1F1F;
     color: white;
@@ -66,4 +66,9 @@
 
 .linklogin:hover{
     color: #B1B1B1;
+}
+
+.loginRegister {
+    width: 400px;
+    margin: 60px 35%;
 }

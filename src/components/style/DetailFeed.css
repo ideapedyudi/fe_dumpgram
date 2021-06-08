@@ -1,3 +1,4 @@
+/* ------------------------------------ style detail feed -------------------------------- */
 .modallg {
     width: 150%;
     border-radius: 5px;
@@ -5,7 +6,8 @@
 }
 
 .modalleft {
-    margin-left: -140px;
+    margin-left: -120px;
+    margin-top: 4%;
 }
 
 .gambarfeed {

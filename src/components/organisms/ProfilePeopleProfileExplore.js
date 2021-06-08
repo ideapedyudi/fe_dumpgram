@@ -1,11 +1,11 @@
 // ------------- Aos --------------
 import { Row, Col, Navbar, Card, Button } from 'react-bootstrap';
 
-import '../style/ProfilePeople.css'
+// -------- router -------------
+import { Link } from "react-router-dom";
 
-// ------------- Aos --------------
-// import Aos from "aos";
-import "aos/dist/aos.css"
+// -------------- style -------------
+import '../style/ProfilePeople.css';
 
 // ------------- fontawesome -----------
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,9 +21,9 @@ function ProfilPeopleProfilFeed() {
         <>
             {/* --------------------------- card profile people explore -------------------------- */}
             <Navbar bg="dark" className="bar logogram">
-                <a href="/feedpage">
+                <Link to="/feedpage">
                     <img src={DumbGram} className="logos ms-4 mt-5" alt="logo" />
-                </a>
+                </Link>
             </Navbar>
             <Card className="bg-card text-center mt-3">
                 <Card.Body>
@@ -51,8 +51,8 @@ function ProfilPeopleProfilFeed() {
                     </Row>
                     <p className="bio">Nobody is Listening Out Now! www.inzayn.com</p>
                     <div class="menus">
-                        <p> <a href="/ProfilePeopleFeed" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-feeds" icon={faHome} /><span className="title-feeds">Feed</span></a></p>
-                        <p> <a href="/ProfilePeopleExplore" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-explores" icon={faCompass} /><span className="title-explores">Explore</span></a></p>
+                        <p> <Link to="/ProfilePeopleFeed" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-feeds" icon={faHome} /><span className="title-feeds">Feed</span></Link></p>
+                        <p> <Link to="/ProfilePeopleExplore" className="title-feed-a"><FontAwesomeIcon className="ms-auto me-5 icon-explores" icon={faCompass} /><span className="title-explores">Explore</span></Link></p>
                     </div>
 
                     <div class="logoutPeople">
